@@ -6,11 +6,9 @@ import { ResponsiveNavbarButton } from "./ResponsiveNavbarButton"
 export const Header = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
 
-    const handleNavClick = navbarOpen => {
+    const handleNavClick = () => {
         return setNavbarOpen(navbarOpen => !navbarOpen)
     }
-    const headerStyles = styles
-    console.log(headerStyles)
 
     useEffect(() => {
         navbarOpen ? document.body.style['overflow'] = 'hidden' : document.body.style['overflow'] = 'visible';
