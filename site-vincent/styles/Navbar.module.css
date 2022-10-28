@@ -1,0 +1,37 @@
+.listContainer {
+    display: flex;
+    padding: 0 16px;
+    box-sizing: border-box;
+    --text-color: white;
+    --text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    flex: 1 1 0;
+}
+
+.open-nav{
+    --text-color: black;
+    --text-shadow: none;
+}
+
+@media (max-width: 1023px) {
+    .listContainer {
+        flex-direction: column;
+        flex: 1 1 0;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+    }
+}
+
+@media (min-width: 1024px) {
+    .listContainer {
+        justify-content: flex-end;
+    }
+}
+
+.element {
+    text-shadow: var(--text-shadow);
+    list-style: none;
+    font-size: clamp(1.25rem, calc(3rem - 2.5vw), 3rem);
+    color: var(--text-color);
+    margin: 16px;
+}

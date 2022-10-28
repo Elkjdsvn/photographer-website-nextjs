@@ -1,0 +1,21 @@
+.button {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin: 5vw;
+    cursor: pointer;
+    --color: white;
+}
+
+.open-nav {
+    --color: black
+}
+
+.bar {
+    width: 2rem;
+    height: 0.125rem;
+    background-color: var(--color);
+}

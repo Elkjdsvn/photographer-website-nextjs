@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.imageContainer {
+    box-sizing: border-box;
+    padding: 3rem;
+    max-width: 500px;
+    width: 100vw;
+}
