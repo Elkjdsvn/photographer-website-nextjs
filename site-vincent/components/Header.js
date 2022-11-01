@@ -12,7 +12,6 @@ export const Header = () => {
 
     useEffect(() => {
         navbarOpen ? document.body.style['overflow'] = 'hidden' : document.body.style['overflow'] = 'visible';
-        // navbarOpen ? styles.header['backgroundColor'] = 'white' : styles.header['backgroundColor'] = 'transparent';
     }, [navbarOpen])
 
 
